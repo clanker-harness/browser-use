@@ -13,7 +13,7 @@ classifiers = [
 dependencies = [
     "aiohttp==3.14.3",
     "anyio==4.12.1",
-    "bubus==1.5.6",
+    "bubus @ git+https://github.com/clanker-harness/bubus@1.5.6",
     "click==8.3.3",
     "InquirerPy==0.3.4",
     "rich==14.3.3",
@@ -40,14 +40,14 @@ dependencies = [
     "mcp==2.1.1",
     "pypdf==6.16.2",
     "reportlab==4.4.9",
-    "cdp-use==1.4.5",
+    "cdp-use @ git+https://github.com/clanker-harness/cdp-use@v1.4.5",
     "pyotp==2.9.0",
     "pillow==12.3.0",
     "cloudpickle==3.1.2",
     "markdownify==1.2.2",
     "python-docx==1.2.0",
-    "browser-use-sdk==3.4.2",
-    "browser-harness==0.1.13",
+    "browser-use-sdk @ git+https://github.com/clanker-harness/sdk@v3.4.2#subdirectory=browser-use-python",
+    "browser-harness @ git+https://github.com/clanker-harness/browser-harness@main",
 ]
 # google-api-core: only used for Google LLM APIs
 # pyperclip: only used for examples that use copy/paste
@@ -96,7 +96,7 @@ all = ["browser-use[cli,examples,aws,oci]"]
 [project.urls]
 Homepage = "https://browser-use.com"
 Documentation = "https://docs.browser-use.com"
-Repository = "https://github.com/browser-use/browser-use"
+Repository = "https://github.com/clanker-harness/browser-use"
 Telemetry = "https://docs.browser-use.com/development/monitoring/telemetry"
 "Terms of Service" = "https://browser-use.com/legal/terms-of-service"
 "Privacy Policy" = "https://browser-use.com/privacy/"

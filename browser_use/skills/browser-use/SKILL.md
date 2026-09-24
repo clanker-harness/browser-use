@@ -23,7 +23,7 @@ metadata:
 
 # Browser Use
 
-Direct browser control via CDP. For task-specific edits, use `agent-workspace/agent_helpers.py`. For setup, install, or connection problems, read https://github.com/browser-use/browser-harness/blob/main/install.md.
+Direct browser control via CDP. For task-specific edits, use `agent-workspace/agent_helpers.py`. For setup, install, or connection problems, read https://github.com/clanker-harness/browser-harness/blob/main/install.md.
 
 ## When Not to Use
 
@@ -136,7 +136,7 @@ When the task is done and a cloud browser is still running, ask directly: "Shoul
 
 Do not start a remote daemon and then keep using the default daemon. Use the same name for `BU_NAME`.
 
-Cloud profile cookie sync reference: https://github.com/browser-use/browser-harness/blob/main/interaction-skills/profile-sync.md.
+Cloud profile cookie sync reference: https://github.com/clanker-harness/browser-harness/blob/main/interaction-skills/profile-sync.md.
 
 ## Page Workflow
 
@@ -175,13 +175,13 @@ browser-use recordings --latest
 
 Use it only if timestamps and pages match; otherwise say the work was not
 captured. Never reenact a completed task. For a video, follow
-[make-video.md](https://github.com/browser-use/browser-harness/blob/main/interaction-skills/make-video.md).
+[make-video.md](https://github.com/clanker-harness/browser-harness/blob/main/interaction-skills/make-video.md).
 If sub-agents are available, they may handle post-production from the exact
 recording path while the main agent returns the task result.
 
 ## Interaction Skills
 
-If you get stuck on a browser mechanic, check https://github.com/browser-use/browser-harness/tree/main/interaction-skills.
+If you get stuck on a browser mechanic, check https://github.com/clanker-harness/browser-harness/tree/main/interaction-skills.
 
 - connection.md
 - cookies.md

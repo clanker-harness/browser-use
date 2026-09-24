@@ -247,7 +247,7 @@ Read the full interface now:   browser-use skill show
 Install the CLI 3.0 skill (upgrades the CLI and replaces any pre-existing browser-use skill):
                                browser-use skill install
 Then load the freshly installed browser-use skill, and follow it to use the latest CLI.
-Skill reference:               https://github.com/browser-use/browser-use/blob/main/browser_use/skills/browser-use/SKILL.md
+Skill reference:               https://github.com/clanker-harness/browser-use/blob/main/browser_use/skills/browser-use/SKILL.md
 Health check:                  browser-use --doctor"""
 
 
@@ -321,13 +321,13 @@ You can also paste this into your agent to get started:
 
   Install or upgrade browser-use to the latest stable version with uv using
   Python 3.12, register the skill from `browser-use skill`, and connect it to
-  my browser. Follow https://github.com/browser-use/browser-use if setup or
+  my browser. Follow https://github.com/clanker-harness/browser-use if setup or
   connection fails.
 
 More:
   browser-use --doctor     check install, daemon, and browser health
   browser-use --help       full command list
-  docs: https://github.com/browser-use/browser-use/blob/main/browser_use/skills/browser-use/SKILL.md"""
+  docs: https://github.com/clanker-harness/browser-use/blob/main/browser_use/skills/browser-use/SKILL.md"""
 
 _EMPTY_STDIN_MESSAGE = """browser-use received empty stdin. This CLI executes Python piped on stdin:
   browser-use <<'PY'

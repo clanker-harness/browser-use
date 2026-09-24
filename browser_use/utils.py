@@ -708,17 +708,19 @@ def get_browser_use_version() -> str:
 
 
 async def check_latest_browser_use_version() -> str | None:
-	"""Check the latest version of browser-use from PyPI asynchronously.
+	"""Check the latest version of browser-use on the clanker-harness fork.
 
 	Returns:
-		The latest version string if PyPI has a newer version, None otherwise.
+		The latest version string if the fork's main branch declares a newer
+		version, None otherwise.
 	"""
 	try:
 		async with httpx.AsyncClient(timeout=3.0) as client:
-			response = await client.get('https://pypi.org/pypi/browser-use/json')
+			response = await client.get('https://raw.githubusercontent.com/clanker-harness/browser-use/main/pyproject.toml')
 			if response.status_code == 200:
-				data = response.json()
-				latest_version = data['info']['version']
+				import tomllib
+
+				latest_version = tomllib.loads(response.text)['project']['version']
 				if _is_newer_browser_use_version(latest_version, get_browser_use_version()):
 					return latest_version
 	except Exception:
